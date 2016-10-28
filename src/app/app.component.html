@@ -1,0 +1,23 @@
+<h1>
+  {{title}}
+</h1>
+
+<button type="button" (click)="login()">Login</button>
+
+<fieldset *ngIf="isAdmin | async">
+  <legend>Admin Only</legend>
+  <p>Admins only!</p>
+</fieldset>
+
+<fieldset *ngIf="uid | async">
+  <legend>Authenticated Users</legend>
+  <p>Authenticated Users</p>
+  <p>My ID is: {{ uid | async }}</p>
+  <button type="button" (click)="logout()">Logout</button>
+</fieldset>
+
+<fieldset>
+  <legend>Everyone can see this!</legend>
+  <p>Welcome!</p>
+</fieldset>
+
