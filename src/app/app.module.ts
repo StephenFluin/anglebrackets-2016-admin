@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
-import * as firebase from 'firebase';
-
-
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -16,6 +13,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyAorXgeWTtj1qET7RaHaTHD8zZGygGrNcs",
       authDomain: "anglebrackets-f2e76.firebaseapp.com",
@@ -26,7 +24,7 @@ import { AppComponent } from './app.component';
         provider: AuthProviders.Google,
         method: AuthMethods.Popup
       }
-    )
+    ),
   ],
   providers: [],
   bootstrap: [AppComponent]

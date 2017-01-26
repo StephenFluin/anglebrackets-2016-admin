@@ -1,7 +1,7 @@
 {
   "project": {
-    "version": "1.0.0-beta.18",
-    "name": "admin"
+    "version": "1.0.0-beta.26",
+    "name": "anglebrackets-admin"
   },
   "apps": [
     {
@@ -28,8 +28,6 @@
       }
     }
   ],
-  "addons": [],
-  "packages": [],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"

@@ -1,10 +1,10 @@
-import { AdminPage } from './app.po';
+import { AnglebracketsAdminPage } from './app.po';
 
-describe('admin App', function() {
-  let page: AdminPage;
+describe('anglebrackets-admin App', function() {
+  let page: AnglebracketsAdminPage;
 
   beforeEach(() => {
-    page = new AdminPage();
+    page = new AnglebracketsAdminPage();
   });
 
   it('should display message saying app works', () => {
